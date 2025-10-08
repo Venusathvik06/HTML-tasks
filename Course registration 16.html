@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Course Enrollment Form</title>
+<style>
+    legend{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    input:required:invalid{
+        border: 2px solid red
+    }
+</style>
+</head>
+<body bgcolor="lightblue">
+<h2 style="text-align: center;">Course Enrollment Form</h2>
+<form style="border:3px solid red; padding:10px; width:300px; background-color:white; margin: auto;">
+    <fieldset>
+    <legend>Enrollment Form</legend>
+  <label>Student Name:</label><br>
+  <input type="text" name="studentName" required><br><br>
+  <label>Roll Number:</label><br>
+  <input type="number" name="roll" required><br><br>
+  <label>Email:</label><br>
+  <input type="email" name="email" required><br><br>
+  <b>Courses (select all that apply):</b><br>
+  <input type="checkbox" name="courses" value="Programming" required>Coding<br>
+  <input type="checkbox" name="courses" value="Mathematics">Mathematics<br>
+  <input type="checkbox" name="courses" value="Networks">WT<br>
+  <input type="checkbox" name="courses" value="Databases">Databases<br><br>
+  <b>Mode of Study </b><br>
+  <input type="radio" name="mode" value="Full-time" required>Full-time<br>
+  <input type="radio" name="mode" value="Online">Online<br><br>
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+  </fieldset>
+</form>
+</body>
+</html>
